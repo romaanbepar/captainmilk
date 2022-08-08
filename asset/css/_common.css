@@ -1,0 +1,93 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding-top: 100px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #626262;
+}
+
+.heading label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+
+  color: #717484;
+}
+
+.heading h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 135%;
+  text-align: center;
+  color: #312f2e;
+}
+.heading img {
+  margin-top: -3px;
+  display: block;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  max-width: 606px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+commonButton {
+  padding: 8px 24px;
+  width: 154px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+
+  background: #57acff;
+  border-radius: 6px;
+}
+
+/* responsive styles  */
+
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 64px 0;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .heading label {
+    font-size: 12px;
+    line-height: 160%;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .heading img {
+    max-width: 221px;
+  }
+}

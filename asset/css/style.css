@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import "_common.css";
+@import "_navbar.css";
+@import "_banner.css";
+@import "_subscribetion.css";
+@import "_feature.css";
+@import "_contact.css";
+@import "_footer.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contactImage .imageWrapper {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subscribetionText .imageWrapper {
+    margin: 48px auto 20px auto;
+  }
+
+  .subscribetionDetails {
+    gap: 70px;
+  }
+  .subscribetionText p {
+    padding: 8px 0 0 0;
+  }
+
+  .subscribetionText:nth-of-type(3) p {
+    padding: 8px 0 50px 0;
+  }
+
+  .feature .customerContent {
+    gap: 100px;
+  }
+
+  .feature .sellerContent {
+    gap: 100px;
+  }
+
+  section.contact {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .feature .customerContent {
+    gap: 120px;
+
+    flex-wrap: wrap;
+  }
+
+  .feature .sellerContent {
+    flex-wrap: wrap;
+  }
+
+  .contact .contactContent {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+}
+@media (max-width: 768px) {
+  /* **********header responsive section**** */
+
+  header ul {
+    display: none;
+  }
+
+  header .active ul {
+    display: flex;
+  }
+
+  .navButton .imageWrapper {
+    display: block;
+  }
+
+  header .imageWrapper {
+    width: 78px;
+    height: 24px;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .navButton a {
+    display: none;
+  }
+
+  header ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    gap: 24px;
+  }
+
+  /* **********hero responsive section**** */
+  .banner h1 {
+    font-size: 32px;
+    line-height: 140%;
+   
+    padding: 0 20px;
+  }
+
+  .banner h4 {
+    padding: 0 20px 40px 20px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .banner div a {
+    padding: 11.5px 20px 11.5px 20px;
+
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  /* ////banner responsive section */
+
+  .banner {
+    padding: 0 20px 86px 20px;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+    line-height: 150%;
+    padding: 142px 0 12px 0;
+  }
+
+  .banner h4 {
+    font-size: 14px;
+    line-height: 160%;
+    padding-bottom: 40px;
+  }
+
+  .banner div a {
+    padding: 11.5px 20px 11.5px 20px;
+
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .bannerContent {
+    /* padding-top: 86px; */
+    gap: 12px;
+  }
+  .bannerContent .bannerSpeciality {
+    padding: 10px 0;
+    gap: 12px;
+  }
+
+  .bannerSpeciality .imgWrapper {
+    width: 24px;
+    height: 24px;
+  }
+
+  .bannerSpeciality h4 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .bannerImageWrapper1 {
+    width: 67px;
+    height: 87px;
+
+    position: absolute;
+    top: 74px;
+    left: 0px;
+  }
+
+  .bannerImageWrapper2 {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 96.88px;
+    right: 0px;
+  }
+
+  .bannerImageWrapper3 {
+    width: 58.62px;
+    height: 62.86px;
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+  }
+
+  .bannerImageWrappe4 {
+    width: 65px;
+    height: 98px;
+    position: absolute;
+    bottom:5px;
+    right: 0;
+  }
+
+  /* ///subcribetion part/// */
+
+  .subscribetionText {
+    width: 100%;
+  }
+
+  .subscribetionDetails {
+    gap: 0;
+  }
+
+  .subscribetionText .imageWrapper {
+    width: 56px;
+    height: 56px;
+
+    margin: 48px auto 20px auto;
+  }
+
+  .subscribetionText:nth-of-type(3) p {
+    padding: 8px 0 0px 0;
+  }
+
+  .subscribetionText h3 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .subscribetionText p {
+    font-size: 14px;
+  }
+
+  /* ////feature responsive.. */
+
+  .feature .customerContent {
+    gap: 32px;
+    padding: 48px 0 34px 0;
+    justify-content: center;
+  }
+
+  .customerContent .featureImage {
+    width: 100%;
+  }
+
+  .featureImage .imageWrapper {
+    width: 320px;
+    height: auto;
+    margin: auto;
+  }
+
+  .customerContent .customerDetails {
+    width: 100%;    
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .customerDetails .featureLogo {
+    padding: 7px 20px 7px 8px;
+  }
+
+  .featureLogo span {
+    font-size: 14px;
+  }
+
+  .customerDetails h5 {
+    font-size: 20px;
+
+    padding: 16px 0 12px 0;
+  }
+
+  .feature .sellerContent {
+    gap: 32px;
+    padding: 48px 0 34px 0;
+    justify-content: center;
+  }
+
+  .sellerContent .featureImage {
+    width: 100%;
+  }
+
+  .sellerContent .sellerDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sellerDetails .featureLogo {
+    padding: 7px 20px 7px 8px;
+  }
+
+  .featureLogo span {
+    font-size: 14px;
+  }
+
+  .sellerDetails h5 {
+    font-size: 20px;
+
+    padding: 16px 0 12px 0;
+  }
+
+  /* ///contact section responsive */
+
+  section.contact {
+    padding: 0;
+  }
+
+  .contact .contactContent {
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactContent .contactDetails {
+    width: 100%;
+  }
+
+  .contactDetails h2 {
+    font-size: 20px;
+    line-height: 150%;
+
+    padding-top: 20px;
+  }
+
+  .contactDetails p {
+    padding: 16px 0 48px 0;
+    margin: auto;
+  }
+
+  .contactImage .imageWrapper {
+    width: 258px;
+    height: auto;
+  }
+
+  /* //footer rsponsive part */
+
+  .footer .footerContent {
+    padding-top: 48px;
+    flex-direction: column;
+  }
+
+  .footerContent .socialMedia {
+    width: 100%;
+  }
+
+  .socialMedia .imageWrapper {
+    width: 117px;
+    height: 36px;
+  }
+
+  .socialMedia p {
+    margin: 16px 0 24px 0;
+    width: 100%;
+  }
+
+  .footerContent h4 {
+    margin: 48px 0 0 0;
+  }
+  .footerContent li a {
+    margin: 12px 0;
+  }
+
+  .footerContent .Explore {
+    width: 100%;
+  }
+
+  .footerContent .QuickLinks {
+    width: 100%;
+  }
+
+  .footerContent .contact {
+    width: 100%;
+  }
+
+  .termsCondition {
+    flex-direction: column;
+  }
+
+  
+
+  .termsCondition ul {
+    flex-direction: column;
+  }
+
+  
+
+  .termsCondition ul li:nth-of-type(3){
+    order: -1; 
+  }
+
+  .termsCondition span:nth-of-type(1) {
+    display: none;
+  }
+
+  .termsCondition span:nth-of-type(2) {
+    display: none;
+  }
+
+}
+
+@media (max-width: 375px) {
+    .bannerContent {
+        gap: 0;
+        flex-direction: column;
+    }
+}
